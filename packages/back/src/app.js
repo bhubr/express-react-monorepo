@@ -5,6 +5,6 @@ import bodyParser from 'body-parser';
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => res.json({ foo: 'bar' }));
+app.get('/api/foo', (req, res) => res.json({ foo: 'bar' }));
 
 module.exports = app;
