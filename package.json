@@ -1,0 +1,10 @@
+{
+  "name": "express-react-monorepo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Benoit Hubert <benoithubert@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  }
+}
