@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx babel src -d build",
     "lint": "npx eslint --fix *.js src test",
-    "precommit": "lint-staged",
+    "precommit": "lint-staged && yarn test",
     "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
     "test": "jest"
   },
