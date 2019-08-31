@@ -5,6 +5,12 @@
   "author": "Benoit Hubert <benoithubert@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "husky": "^3.0.4",
     "lerna": "^3.16.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lerna run --concurrency 1 --stream precommit"
+    }
   }
 }
