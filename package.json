@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Benoit Hubert <benoithubert@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "lerna run lint --stream",
+    "start": "lerna run start --stream"
+  },
   "devDependencies": {
     "husky": "^3.0.4",
     "lerna": "^3.16.4"
