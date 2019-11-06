@@ -9,6 +9,7 @@
     "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
     "test": "jest"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
