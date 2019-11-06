@@ -1,10 +1,8 @@
 module.exports = {
   apps : [{
     name: 'monorepo-test',
-    script: 'packages/back/build/index.js',
-
-    // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
-    args: 'one two',
+    script: 'packages/back/src/index.js',
+    node_args : '--experimental-modules',
     instances: 1,
     autorestart: true,
     watch: false,

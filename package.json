@@ -5,7 +5,7 @@
   "author": "Benoit Hubert <benoithubert@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "postinstall": "echo 'running postinstall' && yarn global add pm2 @babel/cli @babel/core @babel/preset-env",
+    "postinstall": "echo 'running postinstall' && yarn global add pm2",
     "heroku-postbuild": "bash ./postbuild.sh",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "lint": "lerna run lint --stream"
@@ -21,6 +21,6 @@
     }
   },
   "engines": {
-    "node": "10.16.3"
+    "node": "12.13.0"
   }
 }

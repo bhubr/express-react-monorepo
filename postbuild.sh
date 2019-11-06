@@ -21,10 +21,6 @@ yarn -v
 
 echo Install deps
 yarn
-echo build the damn backend
-yarn build
-exit_on_error $?
-echo build the frontend
 cd ../front
 yarn
 yarn build
