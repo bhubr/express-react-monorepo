@@ -28,4 +28,5 @@ yarn build
 exit_on_error $? !!
 echo build the frontend
 cd ../front
+yarn
 yarn build
