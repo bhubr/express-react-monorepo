@@ -9,7 +9,9 @@ exit_on_error() {
 }
 
 cd packages/back
-yarn
-cd ../front
-yarn
-yarn build
+ls
+pwd
+# yarn
+# cd ../front
+# yarn
+# yarn build
