@@ -12,7 +12,6 @@ cd packages/back
 yarn
 ls node_modules
 npx babel src -d build
-echo done
-# cd ../front
-# yarn
-# yarn build
+cd ../front
+yarn
+yarn build
