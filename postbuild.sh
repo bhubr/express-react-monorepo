@@ -10,6 +10,9 @@ exit_on_error() {
 
 cd packages/back
 yarn
-cd ../front
-yarn
-yarn build
+ls node_modules
+npx babel src -d build
+echo done
+# cd ../front
+# yarn
+# yarn build
