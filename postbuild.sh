@@ -11,15 +11,6 @@ exit_on_error() {
 echo Running postbuild
 
 cd packages/back
-ls node_modules | grep babel
-
-echo Print out node and yarn versions
-which node
-node -v
-which yarn
-yarn -v
-
-echo Install deps
 yarn
 cd ../front
 yarn

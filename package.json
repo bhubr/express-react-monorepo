@@ -5,9 +5,8 @@
   "author": "Benoit Hubert <benoithubert@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "postinstall": "echo 'running postinstall' && yarn global add pm2",
     "heroku-postbuild": "bash ./postbuild.sh",
-    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "start": "node --experimental-modules packages/back/src/index",
     "lint": "lerna run lint --stream"
   },
   "devDependencies": {
