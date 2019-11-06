@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "echo 'running postinstall' && npx lerna bootstrap",
-    "heroku-postbuild": "echo 'running postbuild' && cd packages/front && npm run build && cd ../back && npm run build",
+    "heroku-postbuild": "echo 'running postbuild' && cd packages/back && ls node_modules | grep babel && yarn && yarn build && cd ../front && yarn build",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "lint": "lerna run lint --stream"
   },
