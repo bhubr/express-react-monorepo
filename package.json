@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "heroku-postbuild": "bash ./postbuild.sh",
-    "start": "node --experimental-modules packages/back/src/index",
+    "start": "cd packages/back && node --experimental-modules src/index",
     "lint": "lerna run lint --stream"
   },
   "devDependencies": {

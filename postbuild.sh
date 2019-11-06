@@ -8,8 +8,6 @@ exit_on_error() {
   fi
 }
 
-echo Running postbuild
-
 cd packages/back
 yarn
 cd ../front
