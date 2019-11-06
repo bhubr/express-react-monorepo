@@ -1,5 +1,5 @@
 // src/index.js
-import app from './app';
+import app from './app.js';
 
 const port = process.env.PORT || 5000;
 
