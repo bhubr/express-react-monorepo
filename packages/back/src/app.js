@@ -22,4 +22,4 @@ if (isProd) {
   app.get('*', (req, res) => res.sendFile(indexHtml));
 }
 
-module.exports = app;
+export default app;
