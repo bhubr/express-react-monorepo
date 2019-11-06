@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "echo 'running postinstall' && npx lerna bootstrap",
-    "heroku-postbuild": "echo 'running postbuild' && cd packages/back && ls node_modules | grep babel && yarn && yarn build && cd ../front && yarn build",
+    "heroku-postbuild": "bash ./postbuild.sh",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "lint": "lerna run lint --stream"
   },
@@ -19,5 +19,8 @@
     "hooks": {
       "pre-commit": "npx lerna run --concurrency 1 --stream precommit"
     }
+  },
+  "engines": {
+    "node": "10.16.3"
   }
 }
