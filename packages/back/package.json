@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/index.js",
   "scripts": {
-    "build": "npx babel src -d build",
+    "build": "node ./node_modules/@babel/cli/bin/babel.js src -d build",
     "lint": "npx eslint --fix *.js src test",
     "precommit": "lint-staged && yarn test",
     "start": "nodemon --exec ./node_modules/@babel/node/bin/babel-node.js src/index",
