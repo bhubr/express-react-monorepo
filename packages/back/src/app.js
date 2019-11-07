@@ -9,7 +9,8 @@ const isProd = process.env.NODE_ENV === 'production';
 const app = express();
 app.use(bodyParser.json());
 
-app.get('/api/foo', (req, res) => res.json({ foo: 'bar' }));
+// app.get('/api/foo', (req, res) => res.json({ foo: 'bar' }));
+app.get('/api/foo', (req, res) => { throw new Error('error'); });
 
 if (isProd) {
   // Compute the build path and index.html path
