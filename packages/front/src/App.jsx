@@ -9,6 +9,7 @@ function App() {
         .then((data) => setFoo(data.foo))
         .catch((err) => setFoo(err.message));
     },
+    [],
   );
   return (
     <div>
